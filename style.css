@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root {
+  --background-app: #2B2B2C;
+  --background-main: #101014;
+  --text: #EFEFEF;
+  --text-light: #808082;
+}
+
+[data-theme="light"] {
+  --background-app: #F2F2F2;
+  --background-main: #FFFFFF;
+  --text: #383838;
+  --text-light: #9C9C9C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--background-app);
+	display: flex;
+	justify-content: center;
+}
+
+.main {
+	width: 300px;
+  height: 600px; 
+  background: var(--background-main) url(./images/bgmap.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: auto;
+  border-radius: 30px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 30px 30px 20px;
+}
+
+.main .tabs-control {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.main .tabs-control i {
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+  transition: all ease 0.3s;
+  color: var(--text-light);
+}
+
+.main .tabs-control i.active {
+  color: var(--text);
+}
+
+.main .tabs {
+  clear: both;
+  perspective: 600px;
+  width: 100%;
+  height: calc(100% - 36px);
+
+}
+
+.main .tabs .tab {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  transform-origin: top center;
+  transition: opacity 1s;
+
+}
+
+.main .tabs .tab.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.tab-home .home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-header .location .time {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: var(--text-light);
+}
+
+.home-header .location {
+  color: var(--text);
+}
+
+.home-header .location .address i {
+  margin-right: 6px;
+}
+
+.home-header .switch-theme {
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 28%;
+  border: 1px solid var(--text-light);
+  padding: 6px 10px;
+  align-items: center;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-content .weather-today {
+  margin-top: -8px;
+}
+
+.weather-today .weather-icon img {
+  width: 170px;
+  height: 170px;
+}
+
+.weather-today .weather-info .description {
+  text-transform: capitalize;
+}
+
+.weather-today .weather-info .temperature {
+  font-size: 80px;
+  position: relative;
+}
+
+.weather-today .weather-info .temperature sup {
+  color: #f9d65d;
+  font-weight: 400;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+} 
