@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+
+  <title>Weather App</title>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="tabs">
+      <div class="tab tab-home active">
+        <div class="home-header">
+          <div class="location">
+            <p class="time">April 18, 2021</p>
+            <p class="address"><i class='fas fa-map-marker-alt'></i>Tam Kỳ. VN</p>
+          </div>
+          <div class="switch-theme">
+            <div class="theme-light">
+              <i class="far fa-sun"></i>
+            </div>
+            <div class="theme-dark">
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="home-content">
+          <div class="weather-today">
+            <div class="weather-icon">
+              <img src="./images/01d.svg" alt="">
+            </div>
+            <div class="weather-info">
+              <h2 class="description">
+                few clouds
+              </h2>
+              <h1 class="temperature">26<sup>°C</sup>
+              </h1> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab">
+        <h2>search</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsam, consequatur voluptate ratione
+          voluptas ducimus eligendi possimus beatae, in tempore quasi harum esse perspiciatis placeat eaque corporis,
+          consequuntur maxime saepe.</p>
+      </div>
+      <div class="tab">
+        <h2>about</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsam, consequatur voluptate ratione
+          voluptas ducimus eligendi possimus beatae, in tempore quasi harum esse perspiciatis placeat eaque corporis,
+          consequuntur maxime saepe.</p>
+      </div>
+    </div>
+    <div class="tabs-control">
+      <i class="fas fa-home active"></i>
+      <i class="fas fa-search"></i>
+      <i class="fas fa-info-circle"></i>
+    </div>
+  </div>
+
+</body>
+
+</html>
